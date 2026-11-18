@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <rect width="160" height="160" rx="24" fill="#F1E5D8"/>
+  <circle cx="80" cy="80" r="62" fill="#FFD102" opacity="0.35"/>
+  <!-- Shoulders -->
+  <path d="M36 150C38 121 56 108 80 108C104 108 122 121 124 150" fill="#933030" stroke="#361E1E" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Collar -->
+  <path d="M64 110L80 124L96 110" fill="#F9F2EA" stroke="#361E1E" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Head -->
+  <circle cx="80" cy="72" r="32" fill="#F6D0B1" stroke="#361E1E" stroke-width="4.5"/>
+  <!-- Hair -->
+  <path d="M48 68C48 44 63 32 82 32C102 32 114 46 113 67C106 58 95 54 81 55C67 56 56 61 48 68Z" fill="#361E1E"/>
+  <path d="M55 42C62 34 75 30 89 34" stroke="#F9F2EA" stroke-width="3" stroke-linecap="round" opacity="0.25"/>
+  <!-- Glasses -->
+  <rect x="57" y="66" width="19" height="14" rx="5" fill="#F9F2EA" fill-opacity="0.45" stroke="#361E1E" stroke-width="3.5"/>
+  <rect x="84" y="66" width="19" height="14" rx="5" fill="#F9F2EA" fill-opacity="0.45" stroke="#361E1E" stroke-width="3.5"/>
+  <line x1="76" y1="72" x2="84" y2="72" stroke="#361E1E" stroke-width="3.5"/>
+  <!-- Eyes -->
+  <circle cx="67" cy="73" r="3" fill="#361E1E"/>
+  <circle cx="94" cy="73" r="3" fill="#361E1E"/>
+  <!-- Smile -->
+  <path d="M71 87C75 92 85 92 89 87" stroke="#361E1E" stroke-width="3.8" stroke-linecap="round"/>
+  <!-- Dice doodle badge -->
+  <rect x="115" y="18" width="24" height="24" rx="6" transform="rotate(10 115 18)" fill="#FFD102" stroke="#361E1E" stroke-width="3"/>
+  <circle cx="123" cy="29" r="2.2" fill="#361E1E"/>
+  <circle cx="130" cy="34" r="2.2" fill="#361E1E"/>
+</svg>
+

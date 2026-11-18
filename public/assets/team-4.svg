@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <rect width="160" height="160" rx="24" fill="#F1E5D8"/>
+  <circle cx="80" cy="80" r="62" fill="#933030" opacity="0.16"/>
+  <!-- Shoulders -->
+  <path d="M36 150C38 121 57 109 80 109C103 109 122 121 124 150" fill="#361E1E"/>
+  <path d="M62 110H98V150H62Z" fill="#933030" stroke="#361E1E" stroke-width="3.5"/>
+  <!-- Head -->
+  <circle cx="80" cy="74" r="31" fill="#F5CBA7" stroke="#361E1E" stroke-width="4.5"/>
+  <!-- Beanie / Cap -->
+  <path d="M48 64C50 42 64 32 80 32C96 32 110 42 112 64Z" fill="#FFD102" stroke="#361E1E" stroke-width="4.2"/>
+  <rect x="46" y="59" width="68" height="12" rx="6" fill="#933030" stroke="#361E1E" stroke-width="4"/>
+  <!-- Eyes -->
+  <path d="M63 77C65 73 70 73 72 77" stroke="#361E1E" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M88 77C90 73 95 73 97 77" stroke="#361E1E" stroke-width="3.6" stroke-linecap="round"/>
+  <!-- Smile -->
+  <path d="M72 88C76 93 84 93 88 88" stroke="#361E1E" stroke-width="3.8" stroke-linecap="round"/>
+  <!-- Suitcase tag doodle -->
+  <rect x="114" y="20" width="24" height="18" rx="4" transform="rotate(-10 114 20)" fill="#FFD102" stroke="#361E1E" stroke-width="3"/>
+  <path d="M120 28H132" stroke="#361E1E" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
+

@@ -1,0 +1,5 @@
+node_modules/
+dist/
+data/.session-secret
+.vscode/
+.DS_Store

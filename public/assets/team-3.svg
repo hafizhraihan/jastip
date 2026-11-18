@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <rect width="160" height="160" rx="24" fill="#F1E5D8"/>
+  <circle cx="80" cy="80" r="62" fill="#FFD102" opacity="0.28"/>
+  <!-- Shoulders -->
+  <path d="M34 150C38 122 57 109 80 109C103 109 122 122 126 150" fill="#F9F2EA" stroke="#361E1E" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M62 111L80 134L98 111" stroke="#933030" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Head -->
+  <circle cx="80" cy="74" r="31" fill="#E8B48D" stroke="#361E1E" stroke-width="4.5"/>
+  <!-- Curly Hair -->
+  <circle cx="56" cy="54" r="14" fill="#361E1E"/>
+  <circle cx="74" cy="44" r="16" fill="#361E1E"/>
+  <circle cx="94" cy="46" r="15" fill="#361E1E"/>
+  <circle cx="106" cy="59" r="12" fill="#361E1E"/>
+  <!-- Eyes -->
+  <circle cx="68" cy="75" r="3.4" fill="#361E1E"/>
+  <circle cx="92" cy="75" r="3.4" fill="#361E1E"/>
+  <!-- Happy open smile -->
+  <path d="M69 87C73 95 87 95 91 87Z" fill="#933030" stroke="#361E1E" stroke-width="3.2" stroke-linejoin="round"/>
+  <!-- iPhone doodle badge -->
+  <rect x="115" y="18" width="20" height="30" rx="5" transform="rotate(8 115 18)" fill="#F9F2EA" stroke="#361E1E" stroke-width="3"/>
+  <rect x="119" y="23" width="12" height="17" rx="2" transform="rotate(8 119 23)" fill="#FFD102"/>
+</svg>
+

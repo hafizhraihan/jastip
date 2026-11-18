@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <rect width="160" height="160" rx="24" fill="#F1E5D8"/>
+  <circle cx="80" cy="80" r="62" fill="#933030" opacity="0.16"/>
+  <!-- Hair Back -->
+  <path d="M40 72C36 104 42 126 52 136H108C118 126 124 104 120 72C118 46 102 32 80 32C58 32 42 46 40 72Z" fill="#361E1E"/>
+  <!-- Shoulders -->
+  <path d="M36 150C39 122 57 110 80 110C103 110 121 122 124 150" fill="#FFD102" stroke="#361E1E" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="80" cy="74" r="30" fill="#F4C7A1" stroke="#361E1E" stroke-width="4.5"/>
+  <!-- Bangs -->
+  <path d="M51 66C57 52 72 47 86 50C98 52 106 58 110 67C102 62 93 60 80 61C68 62 59 64 51 66Z" fill="#361E1E"/>
+  <!-- Blush -->
+  <circle cx="60" cy="82" r="4.5" fill="#933030" opacity="0.25"/>
+  <circle cx="100" cy="82" r="4.5" fill="#933030" opacity="0.25"/>
+  <!-- Eyes -->
+  <circle cx="67" cy="74" r="3.4" fill="#361E1E"/>
+  <circle cx="93" cy="74" r="3.4" fill="#361E1E"/>
+  <!-- Smile -->
+  <path d="M72 86C76 91 84 91 88 86" stroke="#361E1E" stroke-width="3.8" stroke-linecap="round"/>
+  <!-- Sparkle Pencil Badge -->
+  <circle cx="127" cy="30" r="13" fill="#933030" stroke="#361E1E" stroke-width="3"/>
+  <path d="M127 22V38M119 30H135" stroke="#F9F2EA" stroke-width="3" stroke-linecap="round"/>
+</svg>
+

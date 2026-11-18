@@ -1,0 +1,202 @@
+{
+  "hero": {
+    "appIconUrl": "/uploads/jastip-1794748865857-dxobkn.png",
+    "appName": "JASTIP",
+    "tagline": "",
+    "description": "Race to fulfill orders and cram items into limited luggage space and weight in this competitive grid coverage app-integrated board game.",
+    "availabilityBadge": "Available on Playtest",
+    "ctaText": "Playtest Now",
+    "ctaUrl": ""
+  },
+  "hybrid": {
+    "eyebrow": "",
+    "title": "Combining Tabletop Experience with iOS Technology",
+    "description": "",
+    "tabletopTitle": "On the Tabletop",
+    "tabletopPoints": [
+      "Move meeple across the board to visit stores",
+      "Claim limited item cards from the stores"
+    ],
+    "iosTitle": "On Your iPhone",
+    "iosPoints": [
+      "Scan item cards and instantly drop them into your digital suitcase",
+      "Organize and cram items into your luggage, carefully managing weight and spatial constraints",
+      "Request extra Jastip orders to score bonus points"
+    ]
+  },
+  "features": [
+    {
+      "id": "feat-packing-grid",
+      "title": "Packing Grid",
+      "badge": "Spatial Puzzle",
+      "description": "Rotate, squeeze, and Tetris-pack odd-shaped souvenirs—from fragile ramen bowls to bulky sneaker boxes—into your suitcase grid without breaking weight limits.",
+      "visualType": "packing-grid",
+      "imageUrl": ""
+    },
+    {
+      "id": "feat-multiplayer",
+      "title": "Multiplayer",
+      "badge": "2–6 Players",
+      "description": "Pass-and-play around one iPhone or sync phones at the table. Outbid rival travelers for limited drops and race the boarding gate bell together.",
+      "visualType": "multiplayer",
+      "imageUrl": ""
+    },
+    {
+      "id": "feat-jastip-orders",
+      "title": "Jastip Orders",
+      "badge": "High-Stakes Hustle",
+      "description": "Your group chat never sleeps! Accept wild 'titipan' requests from picky friends—deliver on time for huge tips, or pay heavy embarrassment penalties.",
+      "visualType": "jastip-orders",
+      "imageUrl": ""
+    }
+  ],
+  "howToPlay": [
+    {
+      "id": "step-1",
+      "stepNumber": 1,
+      "title": "Claim Jastip Orders",
+      "description": "Draw friend request cards and inspect live demand on the iOS app. Pick risky high-tip orders or safe pocket-sized snacks.",
+      "mode": "Tabletop + iOS"
+    },
+    {
+      "id": "step-2",
+      "stepNumber": 2,
+      "title": "Roll, Shop & Sabotage",
+      "description": "Roll dice across city districts on the physical board to grab souvenirs before rival players snatch the last limited drop.",
+      "mode": "Tabletop"
+    },
+    {
+      "id": "step-3",
+      "stepNumber": 3,
+      "title": "Pack Your Grid Fast",
+      "description": "Flip to your iPhone and fit every physical item tile into your 6×6 suitcase grid before the boarding gate timer hits zero.",
+      "mode": "iOS App"
+    },
+    {
+      "id": "step-4",
+      "stepNumber": 4,
+      "title": "Clear Customs & Cash In",
+      "description": "Survive random customs inspections, deliver completed Jastip orders, and crown the sharpest traveler at the table!",
+      "mode": "Tabletop + iOS"
+    }
+  ],
+  "previews": [
+    {
+      "id": "prev-packing",
+      "title": "Suitcase Packing Grid",
+      "subtitle": "Drag, rotate & snap souvenirs",
+      "caption": "Test your spatial puzzle skills in real time. Tap items to rotate 90° and balance fragile souvenirs before boarding.",
+      "screenPreset": "packing",
+      "imageUrl": ""
+    },
+    {
+      "id": "prev-orders",
+      "title": "Live Jastip Orders",
+      "subtitle": "Urgent friend requests",
+      "caption": "Prioritize viral matcha snacks, limited sneakers, and skincare drops—each with unique grid shapes and tip multipliers.",
+      "screenPreset": "orders",
+      "imageUrl": ""
+    },
+    {
+      "id": "prev-multiplayer",
+      "title": "Tabletop Match Sync",
+      "subtitle": "Seamless party scoring",
+      "caption": "Keep everyone at the physical table synced on turns, boarding gate countdowns, and end-of-trip payouts.",
+      "screenPreset": "multiplayer",
+      "imageUrl": ""
+    }
+  ],
+  "team": [
+    {
+      "id": "team-1",
+      "name": "Denzel Malik Ibrahim",
+      "role": "Project Manager & iOS Engineer",
+      "avatarUrl": "/assets/team-4.svg",
+      "linkedinUrl": "https://www.linkedin.com/in/denzelmalik"
+    },
+    {
+      "id": "team-2",
+      "name": "Raihan Daniswara",
+      "role": "Lead Designer",
+      "avatarUrl": "/uploads/jastip-1794753218543-0k25hg.jpg",
+      "linkedinUrl": "https://www.linkedin.com/in/hafizhraihan"
+    },
+    {
+      "id": "team-3",
+      "name": "Tohru Djunaedi Sato",
+      "role": "Lead iOS Engineer",
+      "avatarUrl": "/assets/team-1.svg",
+      "linkedinUrl": "https://www.linkedin.com/in/tohrudjunaedisato"
+    },
+    {
+      "id": "team-4",
+      "name": "Feivel Qutby",
+      "role": "iOS Engineer",
+      "avatarUrl": "/assets/team-3.svg",
+      "linkedinUrl": "https://www.linkedin.com/feivel-qutby"
+    },
+    {
+      "id": "team-1794752875622",
+      "name": "Indiana Aisyah Nur",
+      "role": "Designer",
+      "avatarUrl": "/assets/team-2.svg",
+      "linkedinUrl": "https://www.linkedin.com/in/indiananur"
+    },
+    {
+      "id": "team-1794752876405",
+      "name": "Priska Aimee Likarsa",
+      "role": "Designer",
+      "avatarUrl": "/assets/team-2.svg",
+      "linkedinUrl": "https://www.linkedin.com/in/priska-aimee-B15896288"
+    }
+  ],
+  "footer": {
+    "description": "A flat, hand-crafted hybrid tabletop and iOS party board game inspired by the chaos of buying souvenirs for everyone back home.",
+    "exploreLinks": [
+      {
+        "id": "exp-1",
+        "label": "Tabletop + iOS",
+        "href": "#hybrid"
+      },
+      {
+        "id": "exp-2",
+        "label": "Game Features",
+        "href": "#features"
+      },
+      {
+        "id": "exp-3",
+        "label": "How to Play",
+        "href": "#how-to-play"
+      },
+      {
+        "id": "exp-4",
+        "label": "App Preview",
+        "href": "#preview"
+      },
+      {
+        "id": "exp-5",
+        "label": "People Behind JASTIP",
+        "href": "#team"
+      }
+    ],
+    "contactEmail": "dicetomeetu@gmail.com",
+    "socialLinks": [
+      {
+        "id": "soc-1",
+        "label": "TestFlight",
+        "url": "#playtest"
+      },
+      {
+        "id": "soc-2",
+        "label": "Instagram",
+        "url": "https://instagram.com/dicetomeetyouu"
+      },
+      {
+        "id": "soc-3",
+        "label": "Discord Community",
+        "url": ""
+      }
+    ],
+    "copyright": "© 2026 DICE! Studio. All rights reserved."
+  }
+}
