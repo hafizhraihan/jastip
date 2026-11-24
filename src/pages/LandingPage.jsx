@@ -3,7 +3,7 @@ import {
   Sun,
   Moon,
   Smartphone,
-  Dice5,
+  Compass,
   Linkedin,
   Mail,
   ArrowUpRight,
@@ -15,7 +15,6 @@ import {
 import {
   SquiggleUnderline,
   HandDrawnConnector,
-  HeroTabletopScene,
   FeatureArtwork,
   PhonePreviewScreen
 } from "../components/HandDrawnArt.jsx";
@@ -127,7 +126,9 @@ export function LandingPage({ data, theme, onToggleTheme, onNavigate }) {
                 />
                 <div>
                   <h1 className="hero-title">{hero.appName}</h1>
-                  <p className="hero-tagline font-display">{hero.tagline}</p>
+                  {hero.tagline && (
+                    <p className="hero-tagline font-display">{hero.tagline}</p>
+                  )}
                 </div>
               </div>
 
@@ -136,7 +137,7 @@ export function LandingPage({ data, theme, onToggleTheme, onNavigate }) {
               <div className="hero-game-specs">
                 <span className="game-spec-pill">
                   <Users size={16} strokeWidth={2.4} />
-                  <span>2–5 Players</span>
+                  <span>2-5 Players</span>
                 </span>
                 <span className="game-spec-pill">
                   <Swords size={16} strokeWidth={2.4} />
@@ -180,7 +181,13 @@ export function LandingPage({ data, theme, onToggleTheme, onNavigate }) {
             </div>
 
             <div className="hero-visual-col">
-              <HeroTabletopScene />
+              <div className="hero-main-media">
+                <img
+                  src={hero.mainImageUrl || "/assets/main.png"}
+                  alt="JASTIP Store Boards, packed Suitcase, Carry-on luggage, and Random Event cards"
+                  className="hero-main-img"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -195,14 +202,16 @@ export function LandingPage({ data, theme, onToggleTheme, onNavigate }) {
             <div className="section-heading-block">
               <h2>{hybrid.title}</h2>
               <SquiggleUnderline width={210} />
-              <p className="section-lead">{hybrid.description}</p>
+              {hybrid.description && (
+                <p className="section-lead">{hybrid.description}</p>
+              )}
             </div>
 
             <div className="hybrid-grid">
               <div className="sketch-card-elevated hybrid-panel">
                 <div className="hybrid-panel-header">
                   <div className="hybrid-icon-badge is-tabletop">
-                    <Dice5 size={26} strokeWidth={2.4} />
+                    <Compass size={26} strokeWidth={2.4} />
                   </div>
                   <div>
                     <span className="hybrid-kicker font-display">Physical Board &amp; Cards</span>
@@ -253,7 +262,7 @@ export function LandingPage({ data, theme, onToggleTheme, onNavigate }) {
               <h2>Game Features</h2>
               <SquiggleUnderline width={170} />
               <p className="section-lead">
-                Built for loud game nights: spatial suitcase puzzles, sneaky multiplayer bidding, and nonstop Jastip order chaos.
+                Built for 2-5 players: Suitcase and Carry-on grid packing, five Store Boards, Jastip Orders, and Random Events.
               </p>
             </div>
 
@@ -285,7 +294,7 @@ export function LandingPage({ data, theme, onToggleTheme, onNavigate }) {
               <h2>How to Play</h2>
               <SquiggleUnderline width={150} />
               <p className="section-lead">
-                Grab your friends, deal the boarding passes, and open the iOS companion—you’ll be packing in under two minutes.
+                Pair the five Store Boards with the JASTIP iOS app and race the boarding countdown.
               </p>
             </div>
 
@@ -407,10 +416,15 @@ export function LandingPage({ data, theme, onToggleTheme, onNavigate }) {
         <section className="playtest-banner-section">
           <div className="container">
             <div className="playtest-banner sketch-card">
+              <img
+                src="/assets/jastip-passport-booth.png"
+                alt="JASTIP passport and TSX-26 Booth C2 exhibition boarding pass"
+                className="playtest-banner-img"
+              />
               <div className="playtest-banner-copy">
-                <h2>Ready to Pack Your Carry-On?</h2>
+                <h2>Ready to Pack Your Luggage?</h2>
                 <p>
-                  Join early playtesters on iOS TestFlight and grab our print-and-play tabletop starter cards for your next game night.
+                  Try the JASTIP iOS companion app on TestFlight and experience the hybrid tabletop showcase at TSX-26 (Apple Developer Academy @ BINUS, Booth C2).
                 </p>
               </div>
               <button
@@ -435,6 +449,11 @@ export function LandingPage({ data, theme, onToggleTheme, onNavigate }) {
               <span className="font-display brand-name">{hero.appName}</span>
             </div>
             <p className="footer-desc">{footer.description}</p>
+            <img
+              src="/assets/dice-studio-oval.png"
+              alt="DICE Studio"
+              className="footer-studio-logo"
+            />
           </div>
 
           <div className="footer-links-col">
@@ -462,19 +481,21 @@ export function LandingPage({ data, theme, onToggleTheme, onNavigate }) {
               </a>
             )}
             <ul className="footer-socials">
-              {(footer.socialLinks || []).map((soc) => (
-                <li key={soc.id}>
-                  <a
-                    href={soc.url}
-                    target={soc.url.startsWith("http") ? "_blank" : undefined}
-                    rel={soc.url.startsWith("http") ? "noopener noreferrer" : undefined}
-                    onClick={(e) => handleLinkClick(e, soc.url)}
-                  >
-                    <span>{soc.label}</span>
-                    {soc.url.startsWith("http") && <ArrowUpRight size={14} />}
-                  </a>
-                </li>
-              ))}
+              {(footer.socialLinks || [])
+                .filter((soc) => soc.url && soc.url.trim())
+                .map((soc) => (
+                  <li key={soc.id}>
+                    <a
+                      href={soc.url}
+                      target={soc.url.startsWith("http") ? "_blank" : undefined}
+                      rel={soc.url.startsWith("http") ? "noopener noreferrer" : undefined}
+                      onClick={(e) => handleLinkClick(e, soc.url)}
+                    >
+                      <span>{soc.label}</span>
+                      {soc.url.startsWith("http") && <ArrowUpRight size={14} />}
+                    </a>
+                  </li>
+                ))}
             </ul>
           </div>
         </div>

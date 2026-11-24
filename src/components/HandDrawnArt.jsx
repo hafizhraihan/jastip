@@ -80,14 +80,14 @@ export function HandDrawnConnector() {
 }
 
 const PACKING_ITEMS = [
-  { id: "matcha", name: "Matcha Tin", size: "1×2", color: "#FFD102", cells: [0, 1] },
-  { id: "sneakers", name: "Sneaker Box", size: "2×2", color: "#933030", cells: [4, 5, 8, 9] },
-  { id: "skincare", name: "Serum Set", size: "1×2", color: "#E9964A", cells: [6, 10] },
-  { id: "gacha", name: "Gachapon", size: "1×1", color: "#5FA37D", cells: [14] }
+  { id: "train", name: "Toy Train", size: "1×2", color: "#FFD102", cells: [0, 1] },
+  { id: "iron", name: "Flat Iron", size: "2×2", color: "#933030", cells: [4, 5, 8, 9] },
+  { id: "lamp", name: "Antique Lamp", size: "1×2", color: "#E9964A", cells: [6, 10] },
+  { id: "cheese", name: "Artisan Cheese", size: "1×1", color: "#5FA37D", cells: [14] }
 ];
 
 export function HeroTabletopScene() {
-  const [packedIds, setPackedIds] = useState(["matcha", "sneakers", "skincare"]);
+  const [packedIds, setPackedIds] = useState(["train", "iron", "lamp"]);
 
   const toggleItem = (id) => {
     setPackedIds((prev) =>
@@ -111,40 +111,37 @@ export function HeroTabletopScene() {
       {/* Decorative Hand-drawn Tabletop Board Card behind phone */}
       <div className="hero-tabletop-card sketch-card">
         <div className="hero-tabletop-header">
-          <span className="hero-card-tag">TOKYO STOP • GATE 7</span>
-          {/* Hand-drawn Dice */}
+          <span className="hero-card-tag">5 STORE BOARDS • 2-5 PLAYERS</span>
+          {/* Hand-drawn Luggage Tag */}
           <svg width="34" height="34" viewBox="0 0 36 36" fill="none" aria-hidden="true">
             <rect
-              x="3"
-              y="3"
+              x="4"
+              y="6"
               width="28"
-              height="28"
-              rx="7"
+              height="24"
+              rx="6"
               fill="#FFD102"
               stroke="var(--stroke)"
               strokeWidth="2.8"
             />
-            <circle cx="11" cy="11" r="2.4" fill="#000" />
-            <circle cx="23" cy="11" r="2.4" fill="#000" />
-            <circle cx="17" cy="17" r="2.4" fill="#000" />
-            <circle cx="11" cy="23" r="2.4" fill="#000" />
-            <circle cx="23" cy="23" r="2.4" fill="#000" />
+            <circle cx="11" cy="18" r="2.6" fill="#000" />
+            <path d="M17 14H27M17 22H25" stroke="#000" strokeWidth="2.6" strokeLinecap="round" />
           </svg>
         </div>
 
         <div className="hero-order-tickets">
           <div className="hero-ticket">
-            <strong>Titipan #12:</strong> Matcha KitKat ×2
-            <span className="ticket-tip">+180 pts</span>
+            <strong>Shared Order #1:</strong> Gift Set
+            <span className="ticket-tip">+$40</span>
           </div>
           <div className="hero-ticket">
-            <strong>Titipan #19:</strong> Retro Sneakers
-            <span className="ticket-tip">+320 pts</span>
+            <strong>Personal Order:</strong> Boutique Item
+            <span className="ticket-tip">+$60</span>
           </div>
         </div>
 
         <p className="hero-tap-hint">
-          Tap souvenirs below to test-pack the iOS suitcase →
+          Tap scanned item cards below to test-pack →
         </p>
 
         <div className="hero-item-chips">
@@ -175,9 +172,9 @@ export function HeroTabletopScene() {
         <div className="phone-screen-inner">
           <div className="phone-topbar">
             <span className="font-display" style={{ fontWeight: 700, fontSize: "0.78rem" }}>
-              CARRY-ON 4×4
+              SUITCASE GRID
             </span>
-            <span className="phone-timer-pill">01:42</span>
+            <span className="phone-timer-pill">DAY 2 / 5</span>
           </div>
 
           <div className="mini-packing-grid" role="grid" aria-label="Interactive Packing Grid">
@@ -194,7 +191,7 @@ export function HeroTabletopScene() {
           </div>
 
           <div className="phone-bottom-bar">
-            <span>{packedCount}/4 Orders Packed</span>
+            <span>{packedCount}/4 Items Packed</span>
             <span className="phone-ready-dot">
               {packedCount === 4 ? "Ready!" : "Tap tiles"}
             </span>
@@ -377,7 +374,7 @@ export function FeatureArtwork({ visualType, imageUrl, title }) {
     );
   }
 
-  // Fallback hand-drawn star/dice ticket for custom admin features
+  // Fallback hand-drawn star ticket for custom admin features
   return (
     <div className="feature-art-box">
       <svg viewBox="0 0 220 130" fill="none" className="feature-svg">
@@ -408,8 +405,7 @@ export function PhonePreviewScreen({ preview }) {
 
   if (preview.imageUrl) {
     return (
-      <div className="preview-device-frame">
-        <div className="preview-device-notch" />
+      <div className="preview-screenshot-stage">
         <img
           src={preview.imageUrl}
           alt={preview.title}
@@ -468,29 +464,29 @@ export function PhonePreviewScreen({ preview }) {
           <div className="sim-screen">
             <div className="sim-header">
               <span className="font-display">Jastip Orders</span>
-              <span className="sim-badge">Tokyo</span>
+              <span className="sim-badge">3 Shared</span>
             </div>
             <div className="sim-order-list">
               <div className="sim-order-card">
                 <div>
-                  <strong>Matcha Crepe Box</strong>
-                  <small>From: Maya • 2×1 tile</small>
+                  <strong>Shared Order #1</strong>
+                  <small>Completed • Packed</small>
                 </div>
-                <span className="sim-pts">+240</span>
+                <span className="sim-pts">+$40</span>
               </div>
               <div className="sim-order-card is-hot">
                 <div>
-                  <strong>Limited Drop Sneakers</strong>
-                  <small>From: Andi • 2×2 tile</small>
+                  <strong>Personal Order #2</strong>
+                  <small>App option • 2 items</small>
                 </div>
-                <span className="sim-pts">+450</span>
+                <span className="sim-pts">+$60</span>
               </div>
               <div className="sim-order-card">
                 <div>
-                  <strong>Yuzu Lip Balm Set</strong>
-                  <small>From: Tari • 1×1 tile</small>
+                  <strong>Shared Order #3</strong>
+                  <small>In progress • Staging</small>
                 </div>
-                <span className="sim-pts">+120</span>
+                <span className="sim-pts">+$30</span>
               </div>
             </div>
           </div>
@@ -499,15 +495,15 @@ export function PhonePreviewScreen({ preview }) {
         {preset === "multiplayer" && (
           <div className="sim-screen">
             <div className="sim-header">
-              <span className="font-display">Flight Gate 4</span>
-              <span className="sim-badge">Round 3/4</span>
+              <span className="font-display">Turn Order</span>
+              <span className="sim-badge">Day 3 / 5</span>
             </div>
             <div className="sim-leaderboard">
               {[
-                { name: "Raka (You)", score: "1,120 pts", color: "#FFD102" },
-                { name: "Nadia", score: "980 pts", color: "#933030" },
-                { name: "Dimas", score: "840 pts", color: "#5FA37D" },
-                { name: "Salsa", score: "790 pts", color: "#E9964A" }
+                { name: "Raka (You)", score: "$240", color: "#FFD102" },
+                { name: "Nadia", score: "$210", color: "#933030" },
+                { name: "Dimas", score: "$180", color: "#5FA37D" },
+                { name: "Salsa", score: "$150", color: "#E9964A" }
               ].map((player, idx) => (
                 <div key={player.name} className="sim-player-row">
                   <span className="sim-rank">{idx + 1}</span>

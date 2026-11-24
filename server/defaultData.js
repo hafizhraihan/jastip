@@ -1,182 +1,198 @@
 export const defaultSiteData = {
-  hero: {
-    appIconUrl: "/uploads/jastip-1794748865857-dxobkn.png",
-    appName: "JASTIP",
-    tagline: "",
-    description:
-      "Race to fulfill orders and cram items into limited luggage space and weight in this competitive grid coverage app-integrated board game.",
-    availabilityBadge: "Available on Playtest",
-    ctaText: "Playtest Now",
-    ctaUrl: ""
+  "hero": {
+    "appIconUrl": "/uploads/jastip-1794748865857-dxobkn.png",
+    "mainImageUrl": "/assets/main.png",
+    "appName": "JASTIP",
+    "tagline": "Hybrid Tabletop & iOS Board Game",
+    "description": "Race to collect items across five Store Boards, fulfill Jastip Orders, and pack your Suitcase and Carry-on luggage within space and weight limits before your return flight.",
+    "availabilityBadge": "Available on Playtest",
+    "ctaText": "Playtest Now",
+    "ctaUrl": "https://testflight.apple.com/join/1DqSDjDA"
   },
-  hybrid: {
-    eyebrow: "",
-    title: "Combining Tabletop Experience with iOS Technology",
-    description: "",
-    tabletopTitle: "On the Tabletop",
-    tabletopPoints: [
-      "Move meeple across the board to visit stores",
-      "Claim limited item cards from the stores"
+  "hybrid": {
+    "eyebrow": "Tabletop + iOS",
+    "title": "Combining Tabletop Experience with iOS Technology",
+    "description": "Physical Store Boards, Item Cards, and player pawns work together with the JASTIP iOS companion app.",
+    "tabletopTitle": "On the Tabletop",
+    "tabletopPoints": [
+      "Move your pawn across the five Store Boards to visit different stores",
+      "Take available Item Cards from a store's Display Slots"
     ],
-    iosTitle: "On Your iPhone",
-    iosPoints: [
-      "Scan item cards and instantly drop them into your digital suitcase",
-      "Organize and cram items into your luggage, carefully managing weight and spatial constraints",
-      "Request extra Jastip orders to score bonus points"
+    "iosTitle": "On Your iPhone",
+    "iosPoints": [
+      "Scan Item Card QR codes in the app to register each item",
+      "Pack items into your Suitcase and Carry-on luggage grids while managing weight limits",
+      "Track 3 Shared Jastip Orders and add Personal Jastip Orders for listed points"
     ]
   },
-  features: [
+  "features": [
     {
-      id: "feat-packing-grid",
-      title: "Packing Grid",
-      badge: "Spatial Puzzle",
-      description:
-        "Rotate, squeeze, and Tetris-pack odd-shaped souvenirs—from fragile ramen bowls to bulky sneaker boxes—into your suitcase grid without breaking weight limits.",
-      visualType: "packing-grid",
-      imageUrl: ""
+      "id": "feat-packing-grid",
+      "title": "Packing Grid",
+      "badge": "Spatial Puzzle",
+      "description": "Rotate and place scanned Item Cards into your Suitcase and Carry-on grids within weight limits for Perfect Fit and Perfect Weight bonuses.",
+      "visualType": "packing-grid",
+      "imageUrl": "/assets/feature-packing-grid.png"
     },
     {
-      id: "feat-multiplayer",
-      title: "Multiplayer",
-      badge: "2–6 Players",
-      description:
-        "Pass-and-play around one iPhone or sync phones at the table. Outbid rival travelers for limited drops and race the boarding gate bell together.",
-      visualType: "multiplayer",
-      imageUrl: ""
+      "id": "feat-multiplayer",
+      "title": "Multiplayer",
+      "badge": "2-5 Players",
+      "description": "Compete with 2-5 players across rounds representing days before your return flight, with app-determined turn order and store restocks.",
+      "visualType": "multiplayer",
+      "imageUrl": "/assets/feature-multiplayer.png"
     },
     {
-      id: "feat-jastip-orders",
-      title: "Jastip Orders",
-      badge: "High-Stakes Hustle",
-      description:
-        "Your group chat never sleeps! Accept wild 'titipan' requests from picky friends—deliver on time for huge tips, or pay heavy embarrassment penalties.",
-      visualType: "jastip-orders",
-      imageUrl: ""
+      "id": "feat-jastip-orders",
+      "title": "Jastip Orders",
+      "badge": "Shared & Personal",
+      "description": "Complete 3 Shared Jastip Orders and pick Personal Jastip Orders in the app for listed points while adapting to Random Events.",
+      "visualType": "jastip-orders",
+      "imageUrl": "/assets/feature-orders.png"
     }
   ],
-  howToPlay: [
+  "howToPlay": [
     {
-      id: "step-1",
-      stepNumber: 1,
-      title: "Claim Jastip Orders",
-      description:
-        "Draw friend request cards and inspect live demand on the iOS app. Pick risky high-tip orders or safe pocket-sized snacks.",
-      mode: "Tabletop + iOS"
+      "id": "step-1",
+      "stepNumber": 1,
+      "title": "Goal",
+      "description": "Race against time across five Store Boards to fulfill Jastip Orders and pack your luggage before your flight home. Most money at the end wins.",
+      "mode": "Win Condition"
     },
     {
-      id: "step-2",
-      stepNumber: 2,
-      title: "Roll, Shop & Sabotage",
-      description:
-        "Roll dice across city districts on the physical board to grab souvenirs before rival players snatch the last limited drop.",
-      mode: "Tabletop"
+      "id": "step-2",
+      "stepNumber": 2,
+      "title": "Setup",
+      "description": "Lay out all five Store Boards with 3 face-up Item Cards each, give every player a pawn, and start the match in the JASTIP iOS app.",
+      "mode": "Tabletop + iOS"
     },
     {
-      id: "step-3",
-      stepNumber: 3,
-      title: "Pack Your Grid Fast",
-      description:
-        "Flip to your iPhone and fit every physical item tile into your 6×6 suitcase grid before the boarding gate timer hits zero.",
-      mode: "iOS App"
+      "id": "step-3",
+      "stepNumber": 3,
+      "title": "Play!",
+      "description": "Take up to 2 actions per turn—Move Pawn, Take Item (scan QR), or Add Personal Orders—then stores shift and restock before the next day.",
+      "mode": "2 Actions / Turn"
     },
     {
-      id: "step-4",
-      stepNumber: 4,
-      title: "Clear Customs & Cash In",
-      description:
-        "Survive random customs inspections, deliver completed Jastip orders, and crown the sharpest traveler at the table!",
-      mode: "Tabletop + iOS"
+      "id": "step-4",
+      "stepNumber": 4,
+      "title": "Scoring",
+      "description": "After the Last Day, score filled luggage grids (+$10), completed Jastip Orders, and Perfect Fit/Weight bonuses—minus incomplete orders and overweight penalties.",
+      "mode": "End-Game Money"
     }
   ],
-  previews: [
+  "previews": [
     {
-      id: "prev-packing",
-      title: "Suitcase Packing Grid",
-      subtitle: "Drag, rotate & snap souvenirs",
-      caption:
-        "Test your spatial puzzle skills in real time. Tap items to rotate 90° and balance fragile souvenirs before boarding.",
-      screenPreset: "packing",
-      imageUrl: ""
+      "id": "prev-packing",
+      "title": "Suitcase & Carry-on Packing",
+      "subtitle": "Scan items & manage weight limits",
+      "caption": "Track turn order and days remaining before boarding, scan Store Item Cards into your Staging Area, and rotate or drag items into your Suitcase and Carry-on within grid and weight limits.",
+      "screenPreset": "packing",
+      "imageUrl": "/assets/preview-packing.png"
     },
     {
-      id: "prev-orders",
-      title: "Live Jastip Orders",
-      subtitle: "Urgent friend requests",
-      caption:
-        "Prioritize viral matcha snacks, limited sneakers, and skincare drops—each with unique grid shapes and tip multipliers.",
-      screenPreset: "orders",
-      imageUrl: ""
+      "id": "prev-orders",
+      "title": "Scoring Details Receipt",
+      "subtitle": "Grids, bonuses, orders & penalties",
+      "caption": "Inspect an itemized end-of-game breakdown covering filled luggage grids, Perfect Fit and Perfect Weight bonuses, fulfilled or incomplete Jastip Orders, and any Staging Area or overweight penalties.",
+      "screenPreset": "orders",
+      "imageUrl": "/assets/preview-scoring-details.png"
     },
     {
-      id: "prev-multiplayer",
-      title: "Tabletop Match Sync",
-      subtitle: "Seamless party scoring",
-      caption:
-        "Keep everyone at the physical table synced on turns, boarding gate countdowns, and end-of-trip payouts.",
-      screenPreset: "multiplayer",
-      imageUrl: ""
+      "id": "prev-multiplayer",
+      "title": "Final Standings",
+      "subtitle": "2-5 player match leaderboard",
+      "caption": "Compare total income, penalties, and final money across 2-5 players at the table to crown the winning Jastipper after the Last Day.",
+      "screenPreset": "multiplayer",
+      "imageUrl": "/assets/preview-final-standings.png"
     }
   ],
-  team: [
+  "team": [
     {
-      id: "team-1",
-      name: "Denzel Malik Ibrahim",
-      role: "Project Manager & iOS Engineer",
-      avatarUrl: "/assets/team-4.svg",
-      linkedinUrl: "https://www.linkedin.com/in/denzelmalik"
+      "id": "team-1",
+      "name": "Denzel Malik Ibrahim",
+      "role": "Project Manager & iOS Engineer",
+      "avatarUrl": "/assets/team-4.svg",
+      "linkedinUrl": "https://www.linkedin.com/in/denzelmalik"
     },
     {
-      id: "team-2",
-      name: "Raihan Daniswara",
-      role: "Lead Designer",
-      avatarUrl: "/uploads/jastip-1794753218543-0k25hg.jpg",
-      linkedinUrl: "https://www.linkedin.com/in/hafizhraihan"
+      "id": "team-2",
+      "name": "Raihan Daniswara",
+      "role": "Lead Designer",
+      "avatarUrl": "/uploads/jastip-1794753218543-0k25hg.jpg",
+      "linkedinUrl": "https://www.linkedin.com/in/hafizhraihan"
     },
     {
-      id: "team-3",
-      name: "Tohru Djunaedi Sato",
-      role: "Lead iOS Engineer",
-      avatarUrl: "/assets/team-1.svg",
-      linkedinUrl: "https://www.linkedin.com/in/tohrudjunaedisato"
+      "id": "team-3",
+      "name": "Tohru Djunaedi Sato",
+      "role": "Lead iOS Engineer",
+      "avatarUrl": "/assets/team-1.svg",
+      "linkedinUrl": "https://www.linkedin.com/in/tohrudjunaedisato"
     },
     {
-      id: "team-4",
-      name: "Feivel Qutby",
-      role: "iOS Engineer",
-      avatarUrl: "/assets/team-3.svg",
-      linkedinUrl: "https://www.linkedin.com/feivel-qutby"
+      "id": "team-4",
+      "name": "Feivel Qutby",
+      "role": "iOS Engineer",
+      "avatarUrl": "/assets/team-3.svg",
+      "linkedinUrl": "https://www.linkedin.com/feivel-qutby"
     },
     {
-      id: "team-1794752875622",
-      name: "Indiana Aisyah Nur",
-      role: "Designer",
-      avatarUrl: "/assets/team-2.svg",
-      linkedinUrl: "https://www.linkedin.com/in/indiananur"
+      "id": "team-1794752875622",
+      "name": "Indiana Aisyah Nur",
+      "role": "Designer",
+      "avatarUrl": "/assets/team-2.svg",
+      "linkedinUrl": "https://www.linkedin.com/in/indiananur"
     },
     {
-      id: "team-1794752876405",
-      name: "Priska Aimee Likarsa",
-      role: "Designer",
-      avatarUrl: "/assets/team-2.svg",
-      linkedinUrl: "https://www.linkedin.com/in/priska-aimee-B15896288"
+      "id": "team-1794752876405",
+      "name": "Priska Aimee Likarsa",
+      "role": "Designer",
+      "avatarUrl": "/assets/team-2.svg",
+      "linkedinUrl": "https://www.linkedin.com/in/priska-aimee-B15896288"
     }
   ],
-  footer: {
-    description:
-      "A flat, hand-crafted hybrid tabletop and iOS party board game inspired by the chaos of buying souvenirs for everyone back home.",
-    exploreLinks: [
-      { id: "exp-1", label: "Tabletop + iOS", href: "#hybrid" },
-      { id: "exp-2", label: "Game Features", href: "#features" },
-      { id: "exp-3", label: "How to Play", href: "#how-to-play" },
-      { id: "exp-4", label: "App Preview", href: "#preview" },
-      { id: "exp-5", label: "People Behind JASTIP", href: "#team" }
+  "footer": {
+    "description": "A competitive hybrid tabletop and iOS board game for 2-5 players—collect Item Cards across five Store Boards, fulfill Jastip Orders, and pack your luggage before your return flight.",
+    "exploreLinks": [
+      {
+        "id": "exp-1",
+        "label": "Tabletop + iOS",
+        "href": "#hybrid"
+      },
+      {
+        "id": "exp-2",
+        "label": "Game Features",
+        "href": "#features"
+      },
+      {
+        "id": "exp-3",
+        "label": "How to Play",
+        "href": "#how-to-play"
+      },
+      {
+        "id": "exp-4",
+        "label": "App Preview",
+        "href": "#preview"
+      },
+      {
+        "id": "exp-5",
+        "label": "People Behind JASTIP",
+        "href": "#team"
+      }
     ],
-    contactEmail: "dicetomeetu@gmail.com",
-    socialLinks: [
-      { id: "soc-1", label: "TestFlight", url: "#playtest" },
-      { id: "soc-2", label: "Instagram", url: "https://instagram.com/dicetomeetyouu" },
-      { id: "soc-3", label: "Discord Community", url: "" }
+    "contactEmail": "dicetomeetu@gmail.com",
+    "socialLinks": [
+      {
+        "id": "soc-1",
+        "label": "TestFlight",
+        "url": "#playtest"
+      },
+      {
+        "id": "soc-2",
+        "label": "Instagram",
+        "url": "https://instagram.com/dicetomeetyouu"
+      }
     ],
-    copyright: "© 2026 DICE! Studio. All rights reserved."
+    "copyright": "© 2026 DICE! Studio. All rights reserved."
   }
 };

@@ -94,10 +94,10 @@ export function PlaytestModal({ isOpen, onClose, hero }) {
           <div className="playtest-success-box">
             <CheckCircle2 size={42} color="var(--success)" strokeWidth={2.4} />
             <h4 style={{ margin: "10px 0 6px", fontSize: "1.25rem" }}>
-              Boarding Pass Reserved!
+              Playtest Spot Reserved!
             </h4>
             <p style={{ margin: "0 0 18px", color: "var(--text-muted)" }}>
-              Thanks, <strong>{name}</strong>! We've added <strong>{email}</strong> to the JASTIP Playtest crew and will send your iOS TestFlight invite + printable tabletop cards soon.
+              Thanks, <strong>{name}</strong>! We've added <strong>{email}</strong> to the JASTIP Playtest list and will share iOS TestFlight and exhibition updates soon.
             </p>
             <button type="button" className="btn-primary-chunky" onClick={resetAndClose}>
               Back to Website
@@ -107,8 +107,8 @@ export function PlaytestModal({ isOpen, onClose, hero }) {
           <form onSubmit={handleSubmit} className="playtest-form">
             <p style={{ margin: "0 0 14px", color: "var(--text-muted)", fontSize: "0.95rem" }}>
               {hasDirectUrl
-                ? "Want printable tabletop cards or updates on upcoming playtest sessions? Leave your email below:"
-                : "Sign up to get instant TestFlight invite access for iOS plus our print-and-play tabletop starter kit."}
+                ? "Want updates on upcoming JASTIP playtest sessions and exhibition showcases? Leave your email below:"
+                : "Sign up to receive iOS TestFlight playtest access and updates for JASTIP."}
             </p>
 
             <div className="form-field">
@@ -147,7 +147,7 @@ export function PlaytestModal({ isOpen, onClose, hero }) {
               >
                 <option value="iPhone (iOS TestFlight)">iPhone (iOS TestFlight)</option>
                 <option value="iPad (iPadOS TestFlight)">iPad (iPadOS TestFlight)</option>
-                <option value="iOS + Print-and-Play Tabletop">iOS + Print-and-Play Tabletop</option>
+                <option value="iPhone + Tabletop Showcase">iPhone + Tabletop Showcase</option>
               </select>
             </div>
 

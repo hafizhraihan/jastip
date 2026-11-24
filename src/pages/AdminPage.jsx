@@ -501,6 +501,13 @@ export function AdminPage({ data, onDataSaved, theme, onToggleTheme, onNavigate 
                 presets={[{ label: "Default Suitcase Icon", url: "/assets/jastip-icon.svg" }]}
               />
 
+              <ImageUploadField
+                label="Hero Main Artwork"
+                value={draft.hero.mainImageUrl || ""}
+                onChange={(val) => updateDraft((d) => { d.hero.mainImageUrl = val; })}
+                presets={[{ label: "Default Main Artwork", url: "/assets/main.png" }]}
+              />
+
               <div className="admin-two-col">
                 <div className="form-field">
                   <label>App Name</label>
@@ -1238,7 +1245,7 @@ export function AdminPage({ data, onDataSaved, theme, onToggleTheme, onNavigate 
             <section className="sketch-card-elevated admin-panel">
               <div className="admin-panel-head">
                 <h2>Playtest Signups</h2>
-                <p>Visitors who clicked “Playtest Now” and requested TestFlight / print-and-play access.</p>
+                <p>Visitors who clicked “Playtest Now” and requested TestFlight / playtest access.</p>
               </div>
 
               {signups.length === 0 ? (
