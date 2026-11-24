@@ -318,6 +318,26 @@ export function AdminPage({ data, onDataSaved, theme, onToggleTheme, onNavigate 
             Sign in to add, edit, or remove hero text, game features, how-to-play steps, app screenshots, team profiles, and footer links.
           </p>
 
+          {typeof window !== "undefined" &&
+            window.location.hostname !== "localhost" &&
+            window.location.hostname !== "127.0.0.1" && (
+              <div
+                className="sketch-card"
+                style={{
+                  padding: "12px 14px",
+                  marginBottom: "18px",
+                  backgroundColor: "var(--surface)",
+                  fontSize: "0.85rem",
+                  lineHeight: 1.45
+                }}
+              >
+                <strong>💡 Info Mode Deploy (Netlify)</strong>
+                <p style={{ margin: "4px 0 0", color: "var(--text-muted)" }}>
+                  Admin CMS beroperasi di komputer lokal. Untuk mengubah konten dan upload foto, jalankan di terminal lokal: <code>npm run dev</code> lalu push perubahan via git.
+                </p>
+              </div>
+            )}
+
           <form onSubmit={handleLogin}>
             <div className="form-field">
               <label htmlFor="admin-user">Username</label>

@@ -63,6 +63,19 @@ export function saveSiteData(nextData) {
     footer: { ...defaultSiteData.footer, ...(nextData.footer || {}) }
   };
   atomicWriteJson(SITE_DATA_PATH, merged);
+
+  // Keep server/defaultData.js automatically synced for static builds
+  try {
+    const defaultDataPath = path.join(ROOT_DIR, "server", "defaultData.js");
+    fs.writeFileSync(
+      defaultDataPath,
+      `export const defaultSiteData = ${JSON.stringify(merged, null, 2)};\n`,
+      "utf-8"
+    );
+  } catch (err) {
+    console.error("Failed to sync defaultData.js:", err);
+  }
+
   return merged;
 }
 
