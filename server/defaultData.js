@@ -1,30 +1,28 @@
 export const defaultSiteData = {
   hero: {
-    appIconUrl: "/assets/jastip-icon.svg",
+    appIconUrl: "/uploads/jastip-1794748865857-dxobkn.png",
     appName: "JASTIP",
-    tagline: "Pack Smart. Hustle Friends. Make Your Flight.",
+    tagline: "",
     description:
-      "The chaotic tabletop-meets-iOS party board game where you race across overseas shops, fulfill absurd friend requests, and squeeze impossible souvenirs into one tiny carry-on grid.",
+      "Race to fulfill orders and cram items into limited luggage space and weight in this competitive grid coverage app-integrated board game.",
     availabilityBadge: "Available on Playtest",
     ctaText: "Playtest Now",
     ctaUrl: ""
   },
   hybrid: {
-    eyebrow: "Tabletop + iOS Companion",
-    title: "Combining Tabletop Chaos & Smart iOS Play",
-    description:
-      "Keep all the table-talk, bluffing, and card snatching on your physical board—while the iOS companion app powers spatial suitcase physics, live Jastip order markets, and boarding timers.",
+    eyebrow: "",
+    title: "Combining Tabletop Experience with iOS Technology",
+    description: "",
     tabletopTitle: "On the Tabletop",
     tabletopPoints: [
-      "Tactile destination cards, boarding passes, and custom dice",
-      "Real-time haggling, luggage swaps, and friendly sabotage",
-      "Fast 25-minute rounds made for game nights & hangouts"
+      "Move meeple across the board to visit stores",
+      "Claim limited item cards from the stores"
     ],
     iosTitle: "On Your iPhone",
     iosPoints: [
-      "Interactive polyomino Packing Grid checks every item's fit",
-      "Dynamic Jastip Orders feed with shifting tip bonuses",
-      "Shared flight countdown & instant customs score tally"
+      "Scan item cards and instantly drop them into your digital suitcase",
+      "Organize and cram items into your luggage, carefully managing weight and spatial constraints",
+      "Request extra Jastip orders to score bonus points"
     ]
   },
   features: [
@@ -122,31 +120,45 @@ export const defaultSiteData = {
   team: [
     {
       id: "team-1",
-      name: "Raka Pratama",
-      role: "Game Designer & Co-Creator",
-      avatarUrl: "/assets/team-1.svg",
-      linkedinUrl: "https://www.linkedin.com"
+      name: "Denzel Malik Ibrahim",
+      role: "Project Manager & iOS Engineer",
+      avatarUrl: "/assets/team-4.svg",
+      linkedinUrl: "https://www.linkedin.com/in/denzelmalik"
     },
     {
       id: "team-2",
-      name: "Nadia Kusuma",
-      role: "Illustrator & Visual Artist",
-      avatarUrl: "/assets/team-2.svg",
-      linkedinUrl: "https://www.linkedin.com"
+      name: "Raihan Daniswara",
+      role: "Lead Designer",
+      avatarUrl: "/uploads/jastip-1794753218543-0k25hg.jpg",
+      linkedinUrl: "https://www.linkedin.com/in/hafizhraihan"
     },
     {
       id: "team-3",
-      name: "Dimas Wijaya",
-      role: "iOS Engineer",
-      avatarUrl: "/assets/team-3.svg",
-      linkedinUrl: "https://www.linkedin.com"
+      name: "Tohru Djunaedi Sato",
+      role: "Lead iOS Engineer",
+      avatarUrl: "/assets/team-1.svg",
+      linkedinUrl: "https://www.linkedin.com/in/tohrudjunaedisato"
     },
     {
       id: "team-4",
-      name: "Salsa Putri",
-      role: "Tabletop Producer & Playtest Lead",
-      avatarUrl: "/assets/team-4.svg",
-      linkedinUrl: "https://www.linkedin.com"
+      name: "Feivel Qutby",
+      role: "iOS Engineer",
+      avatarUrl: "/assets/team-3.svg",
+      linkedinUrl: "https://www.linkedin.com/feivel-qutby"
+    },
+    {
+      id: "team-1794752875622",
+      name: "Indiana Aisyah Nur",
+      role: "Designer",
+      avatarUrl: "/assets/team-2.svg",
+      linkedinUrl: "https://www.linkedin.com/in/indiananur"
+    },
+    {
+      id: "team-1794752876405",
+      name: "Priska Aimee Likarsa",
+      role: "Designer",
+      avatarUrl: "/assets/team-2.svg",
+      linkedinUrl: "https://www.linkedin.com/in/priska-aimee-B15896288"
     }
   ],
   footer: {
@@ -159,13 +171,12 @@ export const defaultSiteData = {
       { id: "exp-4", label: "App Preview", href: "#preview" },
       { id: "exp-5", label: "People Behind JASTIP", href: "#team" }
     ],
-    contactEmail: "hello@jastipgame.com",
+    contactEmail: "dicetomeetu@gmail.com",
     socialLinks: [
-      { id: "soc-1", label: "TestFlight Playtest", url: "#playtest" },
-      { id: "soc-2", label: "Instagram @jastipgame", url: "https://instagram.com" },
-      { id: "soc-3", label: "Discord Community", url: "https://discord.com" }
+      { id: "soc-1", label: "TestFlight", url: "#playtest" },
+      { id: "soc-2", label: "Instagram", url: "https://instagram.com/dicetomeetyouu" },
+      { id: "soc-3", label: "Discord Community", url: "" }
     ],
-    copyright: "© 2026 JASTIP Board Game. All rights reserved."
+    copyright: "© 2026 DICE! Studio. All rights reserved."
   }
 };
-
