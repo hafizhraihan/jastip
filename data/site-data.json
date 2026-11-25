@@ -112,7 +112,7 @@
       "id": "team-1",
       "name": "Denzel Malik Ibrahim",
       "role": "Project Manager & iOS Engineer",
-      "avatarUrl": "/assets/team-4.svg",
+      "avatarUrl": "/uploads/authors/denzel.jpg",
       "linkedinUrl": "https://www.linkedin.com/in/denzelmalik"
     },
     {
@@ -133,14 +133,14 @@
       "id": "team-4",
       "name": "Feivel Qutby",
       "role": "iOS Engineer",
-      "avatarUrl": "/assets/team-3.svg",
-      "linkedinUrl": "https://www.linkedin.com/feivel-qutby"
+      "avatarUrl": "/uploads/authors/feivel.jpg",
+      "linkedinUrl": "https://www.linkedin.com/in/feivel-qutby"
     },
     {
       "id": "team-1794752875622",
       "name": "Indiana Aisyah Nur",
       "role": "Designer",
-      "avatarUrl": "/assets/team-2.svg",
+      "avatarUrl": "/uploads/authors/indi.jpg",
       "linkedinUrl": "https://www.linkedin.com/in/indiananur"
     },
     {
